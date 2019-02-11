@@ -1,0 +1,58 @@
+#title{
+  text-align: center;
+}
+
+input[type=text]{
+  border-radius: 6px;
+  border: 1px solid grey;
+  height: 30px;
+}
+
+.row{
+  height: 65px;
+  line-height: 65px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#information{
+  width: 1110px;
+  margin: auto;
+}
+
+#information_student{
+  margin-top: 20px;
+}
+
+.container{
+  margin-top: 20px;
+}
+
+.content{
+  margin-left: 30px;
+}
+
+textarea{
+  border-radius: 6px;
+  border: 1px solid grey;
+}
+
+#calculate > button{
+  background-color: #6495ED;
+  border: 0px;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  font-size: 14pt;
+  color:white;
+}
+
+#calculate{
+  text-align: center;
+  margin-bottom:20px;
+}
+
+h4:after
+{
+    content:url(img/question.png);
+}

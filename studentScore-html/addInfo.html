@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="./jquery-3.2.1.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <title>添加学生成绩</title>
+
+</head>
+<body>
+<h3 align="center">请输入学生信息</h3><br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-7 col-md-4">
+            姓名：<input type="text" class="form-control" id="name">
+        </div>
+        <div class="col-xs-7 col-md-4">
+            学号：<input type="text" class="form-control" id="stuId" onchange="checkFormat()">
+        </div>
+        <div class="col-xs-7 col-md-4">
+            班级：<input type="text" class="form-control" id="className">
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            数学成绩：<input type="text" class="form-control" id="mathScore" onchange="checkFormat()">
+        </div>
+        <div class="col-xs-6 col-md-3">
+            语文成绩：<input type="text" class="form-control" id="chineseScore" onchange="checkFormat()">
+        </div>
+        <div class="col-xs-6 col-md-3">
+            英语成绩：<input type="text" class="form-control" id="englishScore" onchange="checkFormat()">
+        </div>
+        <div class="col-xs-6 col-md-3">
+            编程成绩：<input type="text" class="form-control" id="programScore" onchange="checkFormat()">
+        </div>
+    </div>
+</div>
+<br><br>
+<div align="center">
+<button type="button" class="btn btn-lg" id="add">添加</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-lg" onclick="window.location.href='index.html'">返回首页</button>
+</div>
+<script src="js/addInfor.js"></script>
+ </body>
+
+</html>

@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+  <script src="./jquery-3.2.1.js"></script>
+  <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <script src="js/try.js"></script>
+</head>
+
+<body>
+
+  <div style="margin-left:30px;">
+    <div>
+      <h1 align="center">表单设计器（JQuery）</h1>
+    </div>
+
+    <div id="main"style="width: 30%">
+
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-7 col-md-4" align="center" >
+          <button type="button" class="btn btn-lg" id="add" data-toggle="modal" data-target="#myModal">增加元素</button>
+        </div>
+
+        <div class="col-xs-7 col-md-4" align="center">
+          <button type="button" class="btn btn-lg" id="look">预览</button>
+        </div>
+        <div class="col-xs-7 col-md-6" align="center">
+          <button type="button" class="btn btn-lg" id="edit">编辑</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title">选择要添加的表单元素和其字段类型</h4>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-7 col-md-6" align="center" >
+          <select class="form-control" id="formType">
+            <option value="text">text</option>
+            <option value="password">password</option>
+            <option value="radio">radio</option>
+            <option value="checkbox">checkbox</option>
+          </select>
+              </div>
+              <div class="col-xs-7 col-md-6" align="center" >
+          <select class="form-control" id="textType">
+            <option value="文本">文本</option>
+            <option value="日期">日期</option>
+          </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button data-dismiss="modal" class="btn btn-default" type="button">关闭</button>
+          <button class="btn btn-primary" type="button" id="submit">提交</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

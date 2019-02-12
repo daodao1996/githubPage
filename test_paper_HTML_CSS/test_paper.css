@@ -56,3 +56,17 @@ h4:after
 {
     content:url(img/question.png);
 }
+
+label>img{
+  transition:  transform 2s;
+  -webkit-transition:  -webkit-transform 2s;
+  -moz-transition:  -moz-transform 2s;
+  -o-transition:  -o-transform 2s;
+}
+
+label:hover img{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}

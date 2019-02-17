@@ -1,4 +1,4 @@
-#title{
+.title{
   text-align: center;
 }
 
@@ -8,28 +8,49 @@ input[type=text]{
   height: 30px;
 }
 
-.row{
-  height: 65px;
-  line-height: 65px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-#information{
-  width: 1110px;
+.information{
   margin: auto;
+  text-align:left;
+  width:1100px;
+  border-collapse: separate;
+  border-spacing: 0px 20px;
+  line-height: 66px;
 }
 
-#information_student{
-  margin-top: 20px;
+.information tr th{
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;
+   padding-left: 15px;
 }
 
-.container{
-  margin-top: 20px;
+th:first-child{
+  border-left: 1px solid #ccc;
+}
+
+th:last-child{
+  border-right: 1px solid #ccc;
+}
+
+.question{
+  width:1100px;
+  margin: auto;
+  margin-top:20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: "楷体";
+}
+
+.question h3{
+  background-color: #ddd;
+  margin: 0px;
+  line-height: 40px;
+  padding-left: 10px;
+  font-family: "黑体";
 }
 
 .content{
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 textarea{
@@ -37,7 +58,7 @@ textarea{
   border: 1px solid grey;
 }
 
-#calculate > button{
+.calculate > input{
   background-color: #6495ED;
   border: 0px;
   border-radius: 5px;
@@ -47,12 +68,12 @@ textarea{
   color:white;
 }
 
-#calculate{
+.calculate{
   text-align: center;
   margin-bottom:20px;
 }
 
-h4:after
+h3:after
 {
     content:url(img/question.png);
 }
